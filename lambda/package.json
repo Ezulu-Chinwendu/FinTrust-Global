@@ -1,0 +1,11 @@
+{
+  "name": "fintrust-api",
+  "version": "1.0.0",
+  "description": "FinTrust payment processing Lambda",
+  "main": "handler.js",
+  "dependencies": {
+    "aws-sdk": "^2.1400.0",
+    "uuid": "^9.0.0"
+  }
+}
+
