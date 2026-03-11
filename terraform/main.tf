@@ -299,7 +299,7 @@ resource "aws_apigatewayv2_stage" "prod" {
   name        = "prod"
   auto_deploy = true
 
-  # Access logging — captures every API request
+  # Access logging — captures every API request in process
   access_log_settings {
     destination_arn = aws_cloudwatch_log_group.api_logs.arn
     format = "$context.requestId $context.httpMethod $context.routeKey $context.status $context.responseLength"
